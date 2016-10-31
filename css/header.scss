@@ -1,0 +1,451 @@
+@charset "UTF-8";
+
+$fullWidth:100% !default;
+$minWidth:1200px !default;
+$aHoverColor:#FF6900 !default;
+$mainColor:#91be16 !default;
+
+@mixin auto-width{
+    width: 1200px;
+    min-width: $minWidth;
+    margin: 0 auto;
+}
+@mixin header-drop{
+    position: absolute;
+    top: 30px;
+    left: -1px;
+    z-index: 1;
+    
+    background: white;
+    box-shadow: 1px 6px 6px rgba(192,192,192,.5);
+    border: 1px solid #e8e8e8;
+    border-top: 0;
+}
+@mixin cart-a{
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding-right: 35px;
+    
+    font-size: 14px;
+    font-family: "微软雅黑";
+    
+    text-align: center;
+}
+@mixin cart-i{
+    display: inline-block;
+    float: left;
+    width: 21px;
+    height: 16px;
+    margin: 12px 13px 0 12px;
+}
+
+.header_t_box{
+    width: $fullWidth;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fcfcfc;
+}
+
+.header_t{
+    @include auto-width;
+    
+    height: 30px;
+    color: #3e4141;
+    
+    .header_login{
+        float: left;
+        line-height: 30px;
+        margin-right: 20px;
+        
+        a{
+            color: $aHoverColor;
+            margin-left: 5px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+    
+    .header_address{
+        float: left;
+        padding-left: 34px;
+        background: url(../img/jl1.png) 0 -43px no-repeat;
+        
+        a{
+            display: block;
+            width: 79px;
+            height: 22px;
+            line-height: 22px;
+            float: left;
+            margin-top: 3px;
+            padding-left: 6px;
+            
+            background: url(../img/jl1.png) 70px 8px no-repeat white;
+            border: 1px solid #eeeee7;
+        }
+        a:hover{
+            border-color: $mainColor;
+        }
+    }
+    
+    .header_nav{
+        float: right;
+//      overflow: hidden;
+        
+        .lione{
+            position: relative;
+        }
+        ul>li{
+            float: left;
+            background: url(../img/jl1.png) right -79px no-repeat;
+            vertical-align: bottom;
+            
+            i{
+                display: inline-block;
+                width: 0;
+                height: 15px;
+                
+                position: absolute;
+                top: 7px;
+                left: 0;
+                
+                border-left: 1px solid #e6e6e6;
+            }
+            
+            .menu_word{
+                margin: 0 10px;
+                a{
+                    line-height: 30px;
+                    padding-left: 5px;
+                }
+                a:hover{
+                    color: $aHoverColor;
+                    text-decoration: underline;
+                }
+            }
+            
+            .twocode{
+                float: left;
+                position: relative;
+                a{
+                    display: inline-block;
+                    width: 70px;
+                    height: 30px;
+                    line-height: 30px;
+                    padding-left: 30px;
+                    
+//                  background: url(../img/phone.gif) 11px 4px no-repeat;
+                }
+                
+                div{
+                    width: 92px;
+                    padding: 4px;
+                    text-align: center;
+                    display: none;
+                    
+                    @include header-drop;
+                }
+            }
+            
+            .fuwu{
+                width: 87px;
+                height: 30px;
+                position: relative;
+                cursor: pointer;
+                
+                span{
+                    display: inline-block;
+                    width: 73px;
+                    line-height: 30px;
+                    padding-left: 14px;
+//                  background: url(../img/jl1.png) 65px 13px no-repeat;
+                }
+                
+                .kehu{
+                    width: 79px;
+                    padding: 7px 4px 7px;
+                    display: none;
+                    
+                    @include header-drop;
+                    
+                    p{
+                        padding: 0 12px;
+                    }
+                    p a{
+                        line-height: 22px;
+                    }
+                    p a:hover{
+                        text-decoration: underline;
+                        color: $aHoverColor;
+                    }
+                }
+            }
+        }
+    }
+}
+.code_default{
+    background: url(../img/phone.gif) 11px 4px no-repeat;
+}
+.code_cover{
+    background: url(../img/phone_.png) 10px 1px no-repeat, white url(../img/jl1.png) 80px -12px no-repeat;
+    box-shadow: 1px 1px 6px rgba(192,192,192,.5);
+}
+
+.cover{
+    background: white url(../img/jl1.png) 65px -12px no-repeat;
+    box-shadow: 1px 1px 6px rgba(192,192,192,.5);
+}
+.default{
+    background:url(../img/jl1.png) 65px 13px no-repeat;
+}
+
+.header_banner_box{
+    width: $fullWidth;
+    height: 60px;
+    
+    a{
+        display: block;
+        width: $fullWidth;
+        min-width: $minWidth;
+        height: 60px;
+        background: url(../img/head_banner1.jpg) center 0 no-repeat;
+    }
+}
+
+.header_search_box{
+    width: $fullWidth;
+}
+.search_box{
+    @include auto-width;
+    padding: 10px 0 20px;
+    overflow: hidden;
+    
+    .header_logo{
+        float: left;
+    }
+    
+    .header_cart{
+        float: right;
+        margin:30px 0 0 20px;
+//      position: relative;
+        
+        div{
+            height: 38px;
+            border: 1px solid #E5E5E5;
+            position: relative;
+            
+            .goodsCount{
+                display: block;
+                width: 37px;
+                height: 23px;
+                background: url(../img/jl1.png) 0 -194px no-repeat;
+                
+                position: absolute;
+                top: -14px;
+                left: 21px;
+                
+                font: 400 14px/19px "微软雅黑";
+                color: white;
+                text-align: center;
+            }
+            a{
+                @include cart-a;
+                background: url(../img/jl1.png) 100px 17px no-repeat #F8F8F6;
+                i{
+                    
+                    @include cart-i;
+                    
+                    background: url(../img/jl1.png) 0 -158px no-repeat;
+                }
+            }
+        }
+    }
+    
+    .header_benlai{
+        float: right;
+        margin:30px 0 0 20px;
+        border: 1px solid #E5E5E5;
+        
+        a{
+            @include cart-a;
+            background: url(../img/jl1.png) 114px 17px no-repeat #F8F8F6;
+            i{
+                @include cart-i;
+                background: url(../img/jl1.png) 0 -122px no-repeat;
+            }
+        }
+    }
+    
+    .header_search{
+        float: right;
+        margin: 30px 45px 0 0;
+        width: 470px;
+        height: 41px;
+        position: relative;
+        
+        .search_wrap{
+            background-color: $mainColor;
+            padding: 3px;
+            overflow: hidden;
+            
+            input{
+                width: 367px;
+                height: 35px;
+                border: 0;
+                outline: 0;
+                padding: 0 10px;
+                float: left;
+                font: 400 14px/35px "microsoft yahei";
+            }
+            a{
+                width: 77px;
+                height: 32px;
+                display: inline-block;
+                background: url(../img/jl1.png) 0 -265px no-repeat;
+            }
+        }
+        
+        .search_word{
+            width: 470px;
+            height: 32px;
+            line-height: 32px;
+            
+            position: absolute;
+            top: -32px;
+            left: 0;
+            
+            span{
+                margin-right: 25px;
+                color: #666;
+            }
+        }
+    }
+}
+
+//导航
+.header_menu_box{
+    width: $fullWidth;
+    background-color: $mainColor;
+}
+.header_menu_box .menu_inner{
+    @include auto-width;
+    height: 44px;
+    
+    .goods_category{
+        position: relative;
+//      float: left;
+        
+        .tit_all a{
+            display: block;
+            width: 175px;
+            padding-left: 35px;
+            
+            background: url(../img/jl1.png) 158px -218px no-repeat #78a000;
+            color: white;
+            font: 400 18px/44px "microsoft yahei";
+        }
+        
+        .tit_sort{
+            position: absolute;
+            top: 44px;
+            left: 0;
+            
+            height: 396px;
+            width: 206px;
+            border: 2px solid #91be16;
+            background-color: #fff;
+            
+            li.item1{
+                /*url(//image.benlailife.com/webStatic/images/n_top/n_menu_bg01_oc_12373fdb.png) 8px 0 no-repeat #fff;*/
+                width: 156px;
+                height: 31px;
+                line-height: 31px;
+                padding: 1px 0 1px 50px;
+                
+                position: relative;
+                z-index: 3;
+                top: 0;
+                left: 0;
+                
+                font-family: "Microsoft YaHei";
+                font-size: 14px;
+                color: #4c4c4c;
+                text-overflow: clip;
+                background-color: #FFFFFF;
+                
+                ul.slide_right{
+                    /*display: none;*/
+                    width: 600px;
+                    height: auto!important;
+                    height: 384px;
+                    min-height: 384px;
+                    padding: 15px 15px 0 0;
+                    
+                    border-top: 1px solid #8ab700;
+                    border-left: 1px solid #8ab700;
+                    border-right: 1px solid #8ab700;
+                    border-bottom: 1px solid #8ab700;
+                    /*background-color: #fff;*/
+                    /*background: rgba(255,255,255,.97);*/
+                    
+                    position: absolute;
+                    top: -2px;
+                    left: 208px;
+                    z-index: 36;
+                    
+                    li{
+                        width: 590px;
+                        overflow: hidden;
+                        
+                        h4{
+                            width: 90px;
+                            float: left;
+                            text-align: right;
+                            color: #688529;
+                        }
+                        
+                        div.right_item{
+                            float: right;
+                            width: 495px;
+                            
+                            i{
+                                max-width: 400px;
+                                float: left;
+                                
+                                a{ 
+                                    padding: 0 15px;
+                                    border-right: 1px solid #4c4c4c;
+                                }
+                                a:hover{
+                                    text-decoration: underline;
+                                    color: $aHoverColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .menu_big{
+        width: 988px;
+        height: 42px;
+        margin: 2px 0 0 2px;
+        float: right;
+        
+        ul li{
+            float: left;
+            a{
+                display: block;
+                padding: 0 25px;
+                font: 400 18px/42px "Microsoft YaHei";
+                color: #fff;
+            }
+            a:hover{
+                background-color: #78a000;
+            }
+        }
+    }
+}
+

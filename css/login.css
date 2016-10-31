@@ -1,0 +1,125 @@
+#main {
+  width: 100%; }
+  #main .main_in {
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto; }
+    #main .main_in .lujin {
+      line-height: 40px;
+      color: #959595; }
+      #main .main_in .lujin a:hover {
+        text-decoration: none;
+        color: #FF6900; }
+    #main .main_in .form_box {
+      width: 100%; }
+    #main .main_in .register_banner {
+      float: right; }
+
+.form_box form {
+  float: left;
+  width: 460px;
+  height: auto !important;
+  height: 588px;
+  min-height: 388px;
+  border: 1px solid #ddd;
+  margin-bottom: 50px; }
+  .form_box form .reg_tit {
+    padding: 35px; }
+    .form_box form .reg_tit p {
+      font: 400 18px/30px "microsoft yahei";
+      padding-left: 40px;
+      background: url(../img/he.png) 0 -62px no-repeat; }
+  .form_box form .reg_box {
+    padding: 0 30px;
+    width: 400px; }
+    .form_box form .reg_box .prompt {
+      position: absolute;
+      top: -30px;
+      left: 0;
+      line-height: 30px;
+      color: #ff6900; }
+    .form_box form .reg_box .tel_phone {
+      width: 398px;
+      border: 1px solid #DDDDDD;
+      padding: 7px 0;
+      margin-bottom: 30px;
+      position: relative; }
+      .form_box form .reg_box .tel_phone b {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        background: url(../img/he.png) no-repeat;
+        background-position: 0 -102px; }
+      .form_box form .reg_box .tel_phone p {
+        display: inline-block;
+        width: 100px;
+        margin-right: 10px;
+        text-align: center;
+        border-right: 1px solid #ddd;
+        font: 400 14px/28px "Microsoft YaHei"; }
+      .form_box form .reg_box .tel_phone input {
+        width: 240px;
+        height: 28px;
+        font: 400 14px/28px "Microsoft YaHei";
+        border: 0;
+        color: #999999; }
+    .form_box form .reg_box .pass {
+      width: 398px;
+      border: 1px solid #DDDDDD;
+      margin-bottom: 30px;
+      padding: 7px 0;
+      position: relative; }
+      .form_box form .reg_box .pass b {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        width: 25px;
+        height: 25px;
+        background: url(../img/he.png) no-repeat;
+        background-position: 0 -102px; }
+      .form_box form .reg_box .pass p {
+        display: inline-block;
+        width: 100px;
+        border-right: 1px solid #ddd;
+        margin-right: 10px;
+        font: 400 14px/28px "Microsoft YaHei";
+        text-align: center; }
+      .form_box form .reg_box .pass input {
+        width: 240px;
+        height: 28px;
+        font: 400 14px/28px "Microsoft YaHei";
+        border: 0;
+        color: #999999; }
+    .form_box form .reg_box .choose {
+      width: 400px;
+      margin-bottom: 20px;
+      font: 400 14px/20px "microsoft yahei"; }
+      .form_box form .reg_box .choose input {
+        margin: -2px 4px 0 0;
+        display: inline-block;
+        vertical-align: middle; }
+      .form_box form .reg_box .choose a {
+        color: #8ab700;
+        margin-left: 5px; }
+    .form_box form .reg_box .btn a {
+      display: block;
+      width: 400px;
+      font: 400 24px/58px "Microsoft YaHei";
+      text-align: center;
+      color: #fff;
+      background-color: #ff6900;
+      border-radius: 3px; }
+    .form_box form .reg_box .word {
+      width: 100%;
+      text-align: right;
+      padding-bottom: 25px;
+      font: 400 14px/35px "microsoft yahei"; }
+      .form_box form .reg_box .word a {
+        color: #8ab700;
+        margin-left: 5px; }
+      .form_box form .reg_box .word a:hover {
+        text-decoration: underline; }
+
+/*# sourceMappingURL=login.css.map */

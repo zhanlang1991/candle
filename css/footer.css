@@ -1,0 +1,103 @@
+#footer_box {
+  width: 100%;
+  margin-top: 25px; }
+
+#footer_box .footer_bar_box {
+  width: 100%;
+  background-color: #F8F8F6; }
+
+.footer_bar {
+  min-width: 1200px;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 35px; }
+  .footer_bar dl {
+    float: left;
+    margin-right: 60px;
+    padding-top: 40px; }
+    .footer_bar dl dt {
+      float: left;
+      width: 28px;
+      height: 40px;
+      border-right: 1px solid #aeaead;
+      padding: 0 13px;
+      margin-right: 13px;
+      background: url(../img/foot_bar.gif) no-repeat; }
+    .footer_bar dl .ico1 {
+      background-position: 14px 0; }
+    .footer_bar dl .ico2 {
+      background-position: 14px -50px; }
+    .footer_bar dl .ico3 {
+      background-position: 14px -100px; }
+    .footer_bar dl .ico4 {
+      background-position: 14px -150px; }
+    .footer_bar dl .ico5 {
+      background-position: 14px -200px; }
+    .footer_bar dl dd {
+      font: 400 14px/22px "microsoft yahei";
+      color: #666666;
+      float: left; }
+      .footer_bar dl dd span {
+        display: block;
+        font: 400 20px/22px "microsoft yahei";
+        color: #90b42f; }
+
+#footer_box .footer {
+  min-width: 1200px;
+  width: 1200px;
+  margin: 0 auto; }
+  #footer_box .footer .footer_item {
+    width: 920px;
+    height: 160px;
+    padding: 20px 0 20px 70px;
+    margin: 0 auto;
+    overflow: hidden; }
+    #footer_box .footer .footer_item dl {
+      float: left;
+      width: 230px;
+      height: 160px; }
+      #footer_box .footer .footer_item dl dt {
+        height: 26px;
+        padding-left: 35px;
+        margin-bottom: 10px;
+        font: 700 14px/26px "microsoft yahei";
+        color: #666666;
+        background: url(../img/foot_bar.gif) no-repeat; }
+      #footer_box .footer .footer_item dl .xs {
+        background-position: 0 -250px; }
+      #footer_box .footer .footer_item dl .ps {
+        background-position: 0 -280px; }
+      #footer_box .footer .footer_item dl .zf {
+        background-position: 0 -314px; }
+      #footer_box .footer .footer_item dl .sh {
+        background-position: 0 -348px; }
+      #footer_box .footer .footer_item dl dd {
+        line-height: 25px;
+        margin-left: 10px;
+        padding-left: 25px;
+        border-left: 1px dotted #ccc; }
+        #footer_box .footer .footer_item dl dd a:hover {
+          color: #FF6900;
+          text-decoration: underline; }
+  #footer_box .footer .page_info {
+    text-align: center; }
+    #footer_box .footer .page_info dl dt {
+      font: 800 14px/30px "Microsoft YaHei";
+      color: #666; }
+      #footer_box .footer .page_info dl dt img {
+        margin: 0 4px 4px 0; }
+  #footer_box .footer .page_info dl dd {
+    line-height: 24px;
+    color: #666666; }
+    #footer_box .footer .page_info dl dd i {
+      padding: 0 10px;
+      border-right: 1px solid #666666;
+      line-height: 24px; }
+    #footer_box .footer .page_info dl dd .b0 {
+      border: 0 !important; }
+    #footer_box .footer .page_info dl dd a:hover {
+      text-decoration: underline;
+      color: #FF6900; }
+
+/*# sourceMappingURL=footer.css.map */
